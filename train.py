@@ -1,3 +1,4 @@
+from argparse import ArgumentParser
 import torch
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
@@ -12,12 +13,12 @@ import warnings
 # warnings.filterwarnings("ignore")
 
 
-def main():
+def train(train_folder, device):
 
     transforms = Compose([ToTensor()])
 
-    dataset = ImageFolder(root="data/trainset/", transform=transforms)
-    # dataset = torch.utils.data.Subset(dataset, indices=range(2000))
+    dataset = ImageFolder(root=train_folder, transform=transforms)
+    # dataset = torch.utils.data.Subset(dataset, indices=range(200))
 
     # train - validation split
     train_split = 0.95
@@ -42,7 +43,7 @@ def main():
     dataloader_validn = DataLoader(dataset_validn, batch_size=1024)
 
     vgg_channel_list = [64, 128, 64]
-    model = VggTypeNet(channel_list=vgg_channel_list, num_classes=1)
+    model = VggTypeNet(channel_list=vgg_channel_list, num_classes=1).to(device)
     print("Using vgg_channel_list = {}; Number of model parameters = {}".format(
         vgg_channel_list, sum(p.numel() for p in model.parameters() if p.requires_grad)))
 
@@ -59,7 +60,7 @@ def main():
 
             model.train()
 
-            x, target = batch
+            x, target = batch[0].to(device), batch[1].to(device)
             y = model(x).reshape(-1,)
 
             train_loss = F.binary_cross_entropy_with_logits(
@@ -79,6 +80,7 @@ def main():
         model.eval()
 
         x_validn, target_validn = next(iter(dataloader_validn))
+        x_validn, target_validn = x_validn.to(device), target_validn.to(device)
         y_validn = model(x_validn).reshape(-1,)
 
         validn_loss = F.binary_cross_entropy_with_logits(
@@ -94,4 +96,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = ArgumentParser()
+    parser.add_argument("--train_folder", type=str, default="data/trainset/",
+                        help="Path to the folder having training images")
+
+    args = vars(parser.parse_args())
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    train(args["train_folder"], device=device)

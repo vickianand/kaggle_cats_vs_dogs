@@ -1,4 +1,4 @@
 # [Cats and Dogs classification - Competition for IFT6135H19 Assignment 1, Practical part](Cats and Dogs classification - Competition for IFT6135H19 Assignment 1, Practical part)
 
 # Training
-Run `python train.py`
+Run `python train.py --train_folder <path to folder having images>`
