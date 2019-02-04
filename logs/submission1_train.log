@@ -1,0 +1,830 @@
+Train set size = 18998; Validation set size = 1000
+Using vgg_channel_list = [64, 128, 64]; Number of model parameters = 374977
+Epoch 0, batch 0: Training loss = 0.695, accuracy = 46.9
+Epoch 0, batch 10: Training loss = 0.694, accuracy = 43.0
+Epoch 0, batch 20: Training loss = 0.692, accuracy = 53.9
+Epoch 0, batch 30: Training loss = 0.694, accuracy = 48.4
+Epoch 0, batch 40: Training loss = 0.693, accuracy = 56.2
+Epoch 0, batch 50: Training loss = 0.693, accuracy = 51.6
+Epoch 0, batch 60: Training loss = 0.694, accuracy = 44.5
+Epoch 0, batch 70: Training loss = 0.694, accuracy = 44.5
+Epoch 0, batch 80: Training loss = 0.693, accuracy = 47.7
+Epoch 0, batch 90: Training loss = 0.693, accuracy = 53.1
+Epoch 0, batch 100: Training loss = 0.692, accuracy = 55.5
+Epoch 0, batch 110: Training loss = 0.694, accuracy = 45.3
+Epoch 0, batch 120: Training loss = 0.695, accuracy = 45.3
+Epoch 0, batch 130: Training loss = 0.694, accuracy = 46.9
+Epoch 0, batch 140: Training loss = 0.691, accuracy = 58.6
+================================================================================
+Epoch 0: Validation (1000 items) loss = 0.693, accuracy = 49.8
+================================================================================
+Epoch 1, batch 0: Training loss = 0.693, accuracy = 50.8
+Epoch 1, batch 10: Training loss = 0.693, accuracy = 50.0
+Epoch 1, batch 20: Training loss = 0.695, accuracy = 45.3
+Epoch 1, batch 30: Training loss = 0.693, accuracy = 47.7
+Epoch 1, batch 40: Training loss = 0.693, accuracy = 50.8
+Epoch 1, batch 50: Training loss = 0.694, accuracy = 46.1
+Epoch 1, batch 60: Training loss = 0.693, accuracy = 50.8
+Epoch 1, batch 70: Training loss = 0.692, accuracy = 55.5
+Epoch 1, batch 80: Training loss = 0.695, accuracy = 46.1
+Epoch 1, batch 90: Training loss = 0.694, accuracy = 42.2
+Epoch 1, batch 100: Training loss = 0.693, accuracy = 53.9
+Epoch 1, batch 110: Training loss = 0.693, accuracy = 55.5
+Epoch 1, batch 120: Training loss = 0.692, accuracy = 53.9
+Epoch 1, batch 130: Training loss = 0.694, accuracy = 43.8
+Epoch 1, batch 140: Training loss = 0.696, accuracy = 43.8
+================================================================================
+Epoch 1: Validation (1000 items) loss = 0.693, accuracy = 50.3
+================================================================================
+Epoch 2, batch 0: Training loss = 0.693, accuracy = 48.4
+Epoch 2, batch 10: Training loss = 0.693, accuracy = 46.9
+Epoch 2, batch 20: Training loss = 0.692, accuracy = 55.5
+Epoch 2, batch 30: Training loss = 0.693, accuracy = 46.1
+Epoch 2, batch 40: Training loss = 0.692, accuracy = 51.6
+Epoch 2, batch 50: Training loss = 0.694, accuracy = 45.3
+Epoch 2, batch 60: Training loss = 0.693, accuracy = 50.8
+Epoch 2, batch 70: Training loss = 0.692, accuracy = 50.8
+Epoch 2, batch 80: Training loss = 0.692, accuracy = 54.7
+Epoch 2, batch 90: Training loss = 0.693, accuracy = 50.8
+Epoch 2, batch 100: Training loss = 0.689, accuracy = 54.7
+Epoch 2, batch 110: Training loss = 0.692, accuracy = 54.7
+Epoch 2, batch 120: Training loss = 0.690, accuracy = 58.6
+Epoch 2, batch 130: Training loss = 0.692, accuracy = 56.2
+Epoch 2, batch 140: Training loss = 0.692, accuracy = 49.2
+================================================================================
+Epoch 2: Validation (1000 items) loss = 0.691, accuracy = 56.3
+================================================================================
+Epoch 3, batch 0: Training loss = 0.692, accuracy = 55.5
+Epoch 3, batch 10: Training loss = 0.691, accuracy = 55.5
+Epoch 3, batch 20: Training loss = 0.692, accuracy = 49.2
+Epoch 3, batch 30: Training loss = 0.689, accuracy = 50.8
+Epoch 3, batch 40: Training loss = 0.697, accuracy = 48.4
+Epoch 3, batch 50: Training loss = 0.696, accuracy = 53.1
+Epoch 3, batch 60: Training loss = 0.686, accuracy = 59.4
+Epoch 3, batch 70: Training loss = 0.694, accuracy = 50.8
+Epoch 3, batch 80: Training loss = 0.689, accuracy = 52.3
+Epoch 3, batch 90: Training loss = 0.680, accuracy = 60.9
+Epoch 3, batch 100: Training loss = 0.692, accuracy = 53.1
+Epoch 3, batch 110: Training loss = 0.682, accuracy = 59.4
+Epoch 3, batch 120: Training loss = 0.688, accuracy = 54.7
+Epoch 3, batch 130: Training loss = 0.695, accuracy = 53.1
+Epoch 3, batch 140: Training loss = 0.665, accuracy = 64.1
+================================================================================
+Epoch 3: Validation (1000 items) loss = 0.684, accuracy = 55.8
+================================================================================
+Epoch 4, batch 0: Training loss = 0.692, accuracy = 57.8
+Epoch 4, batch 10: Training loss = 0.686, accuracy = 55.5
+Epoch 4, batch 20: Training loss = 0.694, accuracy = 51.6
+Epoch 4, batch 30: Training loss = 0.684, accuracy = 56.2
+Epoch 4, batch 40: Training loss = 0.688, accuracy = 56.2
+Epoch 4, batch 50: Training loss = 0.672, accuracy = 55.5
+Epoch 4, batch 60: Training loss = 0.703, accuracy = 48.4
+Epoch 4, batch 70: Training loss = 0.700, accuracy = 53.1
+Epoch 4, batch 80: Training loss = 0.663, accuracy = 68.0
+Epoch 4, batch 90: Training loss = 0.701, accuracy = 51.6
+Epoch 4, batch 100: Training loss = 0.699, accuracy = 51.6
+Epoch 4, batch 110: Training loss = 0.669, accuracy = 64.1
+Epoch 4, batch 120: Training loss = 0.665, accuracy = 65.6
+Epoch 4, batch 130: Training loss = 0.679, accuracy = 57.8
+Epoch 4, batch 140: Training loss = 0.677, accuracy = 54.7
+================================================================================
+Epoch 4: Validation (1000 items) loss = 0.691, accuracy = 53.7
+================================================================================
+Epoch 5, batch 0: Training loss = 0.710, accuracy = 55.5
+Epoch 5, batch 10: Training loss = 0.678, accuracy = 57.8
+Epoch 5, batch 20: Training loss = 0.679, accuracy = 59.4
+Epoch 5, batch 30: Training loss = 0.683, accuracy = 55.5
+Epoch 5, batch 40: Training loss = 0.698, accuracy = 53.9
+Epoch 5, batch 50: Training loss = 0.707, accuracy = 55.5
+Epoch 5, batch 60: Training loss = 0.669, accuracy = 57.0
+Epoch 5, batch 70: Training loss = 0.666, accuracy = 61.7
+Epoch 5, batch 80: Training loss = 0.663, accuracy = 63.3
+Epoch 5, batch 90: Training loss = 0.650, accuracy = 63.3
+Epoch 5, batch 100: Training loss = 0.669, accuracy = 54.7
+Epoch 5, batch 110: Training loss = 0.668, accuracy = 60.9
+Epoch 5, batch 120: Training loss = 0.676, accuracy = 63.3
+Epoch 5, batch 130: Training loss = 0.645, accuracy = 71.1
+Epoch 5, batch 140: Training loss = 0.658, accuracy = 64.8
+================================================================================
+Epoch 5: Validation (1000 items) loss = 0.662, accuracy = 60.4
+================================================================================
+Epoch 6, batch 0: Training loss = 0.677, accuracy = 57.8
+Epoch 6, batch 10: Training loss = 0.670, accuracy = 60.9
+Epoch 6, batch 20: Training loss = 0.693, accuracy = 53.9
+Epoch 6, batch 30: Training loss = 0.680, accuracy = 55.5
+Epoch 6, batch 40: Training loss = 0.674, accuracy = 58.6
+Epoch 6, batch 50: Training loss = 0.653, accuracy = 61.7
+Epoch 6, batch 60: Training loss = 0.682, accuracy = 56.2
+Epoch 6, batch 70: Training loss = 0.676, accuracy = 55.5
+Epoch 6, batch 80: Training loss = 0.698, accuracy = 53.9
+Epoch 6, batch 90: Training loss = 0.669, accuracy = 61.7
+Epoch 6, batch 100: Training loss = 0.670, accuracy = 61.7
+Epoch 6, batch 110: Training loss = 0.659, accuracy = 60.2
+Epoch 6, batch 120: Training loss = 0.672, accuracy = 59.4
+Epoch 6, batch 130: Training loss = 0.682, accuracy = 56.2
+Epoch 6, batch 140: Training loss = 0.627, accuracy = 71.1
+================================================================================
+Epoch 6: Validation (1000 items) loss = 0.687, accuracy = 56.1
+================================================================================
+Epoch 7, batch 0: Training loss = 0.661, accuracy = 60.9
+Epoch 7, batch 10: Training loss = 0.642, accuracy = 61.7
+Epoch 7, batch 20: Training loss = 0.666, accuracy = 55.5
+Epoch 7, batch 30: Training loss = 0.614, accuracy = 68.8
+Epoch 7, batch 40: Training loss = 0.653, accuracy = 58.6
+Epoch 7, batch 50: Training loss = 0.617, accuracy = 63.3
+Epoch 7, batch 60: Training loss = 0.625, accuracy = 64.8
+Epoch 7, batch 70: Training loss = 0.664, accuracy = 60.2
+Epoch 7, batch 80: Training loss = 0.655, accuracy = 62.5
+Epoch 7, batch 90: Training loss = 0.684, accuracy = 53.1
+Epoch 7, batch 100: Training loss = 0.653, accuracy = 63.3
+Epoch 7, batch 110: Training loss = 0.714, accuracy = 58.6
+Epoch 7, batch 120: Training loss = 0.630, accuracy = 66.4
+Epoch 7, batch 130: Training loss = 0.605, accuracy = 69.5
+Epoch 7, batch 140: Training loss = 0.635, accuracy = 61.7
+================================================================================
+Epoch 7: Validation (1000 items) loss = 0.640, accuracy = 62.6
+================================================================================
+Epoch 8, batch 0: Training loss = 0.600, accuracy = 71.1
+Epoch 8, batch 10: Training loss = 0.667, accuracy = 60.9
+Epoch 8, batch 20: Training loss = 0.616, accuracy = 68.8
+Epoch 8, batch 30: Training loss = 0.620, accuracy = 65.6
+Epoch 8, batch 40: Training loss = 0.589, accuracy = 71.9
+Epoch 8, batch 50: Training loss = 0.684, accuracy = 55.5
+Epoch 8, batch 60: Training loss = 0.641, accuracy = 59.4
+Epoch 8, batch 70: Training loss = 0.661, accuracy = 61.7
+Epoch 8, batch 80: Training loss = 0.639, accuracy = 59.4
+Epoch 8, batch 90: Training loss = 0.639, accuracy = 63.3
+Epoch 8, batch 100: Training loss = 0.602, accuracy = 65.6
+Epoch 8, batch 110: Training loss = 0.642, accuracy = 61.7
+Epoch 8, batch 120: Training loss = 0.619, accuracy = 68.0
+Epoch 8, batch 130: Training loss = 0.625, accuracy = 66.4
+Epoch 8, batch 140: Training loss = 0.583, accuracy = 68.8
+================================================================================
+Epoch 8: Validation (1000 items) loss = 0.665, accuracy = 60.8
+================================================================================
+Epoch 9, batch 0: Training loss = 0.633, accuracy = 60.9
+Epoch 9, batch 10: Training loss = 0.621, accuracy = 67.2
+Epoch 9, batch 20: Training loss = 0.654, accuracy = 60.9
+Epoch 9, batch 30: Training loss = 0.641, accuracy = 61.7
+Epoch 9, batch 40: Training loss = 0.683, accuracy = 58.6
+Epoch 9, batch 50: Training loss = 0.616, accuracy = 66.4
+Epoch 9, batch 60: Training loss = 0.616, accuracy = 64.8
+Epoch 9, batch 70: Training loss = 0.635, accuracy = 68.0
+Epoch 9, batch 80: Training loss = 0.645, accuracy = 57.0
+Epoch 9, batch 90: Training loss = 0.620, accuracy = 62.5
+Epoch 9, batch 100: Training loss = 0.620, accuracy = 64.8
+Epoch 9, batch 110: Training loss = 0.667, accuracy = 59.4
+Epoch 9, batch 120: Training loss = 0.575, accuracy = 73.4
+Epoch 9, batch 130: Training loss = 0.627, accuracy = 67.2
+Epoch 9, batch 140: Training loss = 0.614, accuracy = 71.1
+================================================================================
+Epoch 9: Validation (1000 items) loss = 0.710, accuracy = 57.6
+================================================================================
+Epoch 10, batch 0: Training loss = 0.652, accuracy = 61.7
+Epoch 10, batch 10: Training loss = 0.589, accuracy = 70.3
+Epoch 10, batch 20: Training loss = 0.573, accuracy = 69.5
+Epoch 10, batch 30: Training loss = 0.603, accuracy = 71.1
+Epoch 10, batch 40: Training loss = 0.568, accuracy = 68.8
+Epoch 10, batch 50: Training loss = 0.551, accuracy = 75.8
+Epoch 10, batch 60: Training loss = 0.598, accuracy = 65.6
+Epoch 10, batch 70: Training loss = 0.593, accuracy = 65.6
+Epoch 10, batch 80: Training loss = 0.664, accuracy = 65.6
+Epoch 10, batch 90: Training loss = 0.636, accuracy = 59.4
+Epoch 10, batch 100: Training loss = 0.639, accuracy = 68.0
+Epoch 10, batch 110: Training loss = 0.650, accuracy = 64.1
+Epoch 10, batch 120: Training loss = 0.567, accuracy = 69.5
+Epoch 10, batch 130: Training loss = 0.614, accuracy = 69.5
+Epoch 10, batch 140: Training loss = 0.597, accuracy = 70.3
+================================================================================
+Epoch 10: Validation (1000 items) loss = 0.618, accuracy = 66.4
+================================================================================
+Epoch 11, batch 0: Training loss = 0.642, accuracy = 60.9
+Epoch 11, batch 10: Training loss = 0.600, accuracy = 71.9
+Epoch 11, batch 20: Training loss = 0.549, accuracy = 73.4
+Epoch 11, batch 30: Training loss = 0.563, accuracy = 71.1
+Epoch 11, batch 40: Training loss = 0.638, accuracy = 64.8
+Epoch 11, batch 50: Training loss = 0.611, accuracy = 67.2
+Epoch 11, batch 60: Training loss = 0.512, accuracy = 75.0
+Epoch 11, batch 70: Training loss = 0.574, accuracy = 71.9
+Epoch 11, batch 80: Training loss = 0.661, accuracy = 60.9
+Epoch 11, batch 90: Training loss = 0.671, accuracy = 66.4
+Epoch 11, batch 100: Training loss = 0.524, accuracy = 77.3
+Epoch 11, batch 110: Training loss = 0.553, accuracy = 71.1
+Epoch 11, batch 120: Training loss = 0.502, accuracy = 75.0
+Epoch 11, batch 130: Training loss = 0.640, accuracy = 63.3
+Epoch 11, batch 140: Training loss = 0.578, accuracy = 74.2
+================================================================================
+Epoch 11: Validation (1000 items) loss = 0.592, accuracy = 69.9
+================================================================================
+Epoch 12, batch 0: Training loss = 0.557, accuracy = 71.9
+Epoch 12, batch 10: Training loss = 0.534, accuracy = 73.4
+Epoch 12, batch 20: Training loss = 0.581, accuracy = 69.5
+Epoch 12, batch 30: Training loss = 0.574, accuracy = 68.0
+Epoch 12, batch 40: Training loss = 0.587, accuracy = 68.0
+Epoch 12, batch 50: Training loss = 0.507, accuracy = 75.0
+Epoch 12, batch 60: Training loss = 0.557, accuracy = 69.5
+Epoch 12, batch 70: Training loss = 0.567, accuracy = 69.5
+Epoch 12, batch 80: Training loss = 0.546, accuracy = 71.1
+Epoch 12, batch 90: Training loss = 0.569, accuracy = 75.0
+Epoch 12, batch 100: Training loss = 0.586, accuracy = 70.3
+Epoch 12, batch 110: Training loss = 0.545, accuracy = 75.0
+Epoch 12, batch 120: Training loss = 0.582, accuracy = 70.3
+Epoch 12, batch 130: Training loss = 0.536, accuracy = 75.0
+Epoch 12, batch 140: Training loss = 0.562, accuracy = 69.5
+================================================================================
+Epoch 12: Validation (1000 items) loss = 0.563, accuracy = 72.6
+================================================================================
+Epoch 13, batch 0: Training loss = 0.540, accuracy = 72.7
+Epoch 13, batch 10: Training loss = 0.612, accuracy = 72.7
+Epoch 13, batch 20: Training loss = 0.520, accuracy = 76.6
+Epoch 13, batch 30: Training loss = 0.559, accuracy = 71.9
+Epoch 13, batch 40: Training loss = 0.473, accuracy = 80.5
+Epoch 13, batch 50: Training loss = 0.575, accuracy = 68.8
+Epoch 13, batch 60: Training loss = 0.453, accuracy = 78.1
+Epoch 13, batch 70: Training loss = 0.561, accuracy = 71.9
+Epoch 13, batch 80: Training loss = 0.516, accuracy = 75.8
+Epoch 13, batch 90: Training loss = 0.444, accuracy = 81.2
+Epoch 13, batch 100: Training loss = 0.481, accuracy = 76.6
+Epoch 13, batch 110: Training loss = 0.511, accuracy = 75.8
+Epoch 13, batch 120: Training loss = 0.589, accuracy = 68.0
+Epoch 13, batch 130: Training loss = 0.511, accuracy = 72.7
+Epoch 13, batch 140: Training loss = 0.610, accuracy = 69.5
+================================================================================
+Epoch 13: Validation (1000 items) loss = 0.593, accuracy = 70.5
+================================================================================
+Epoch 14, batch 0: Training loss = 0.526, accuracy = 77.3
+Epoch 14, batch 10: Training loss = 0.506, accuracy = 75.0
+Epoch 14, batch 20: Training loss = 0.461, accuracy = 80.5
+Epoch 14, batch 30: Training loss = 0.526, accuracy = 72.7
+Epoch 14, batch 40: Training loss = 0.518, accuracy = 75.0
+Epoch 14, batch 50: Training loss = 0.519, accuracy = 74.2
+Epoch 14, batch 60: Training loss = 0.487, accuracy = 75.8
+Epoch 14, batch 70: Training loss = 0.516, accuracy = 72.7
+Epoch 14, batch 80: Training loss = 0.535, accuracy = 70.3
+Epoch 14, batch 90: Training loss = 0.551, accuracy = 74.2
+Epoch 14, batch 100: Training loss = 0.519, accuracy = 75.8
+Epoch 14, batch 110: Training loss = 0.545, accuracy = 72.7
+Epoch 14, batch 120: Training loss = 0.540, accuracy = 70.3
+Epoch 14, batch 130: Training loss = 0.554, accuracy = 74.2
+Epoch 14, batch 140: Training loss = 0.568, accuracy = 76.6
+================================================================================
+Epoch 14: Validation (1000 items) loss = 0.558, accuracy = 72.8
+================================================================================
+Epoch 15, batch 0: Training loss = 0.509, accuracy = 75.0
+Epoch 15, batch 10: Training loss = 0.506, accuracy = 75.8
+Epoch 15, batch 20: Training loss = 0.492, accuracy = 78.9
+Epoch 15, batch 30: Training loss = 0.466, accuracy = 75.8
+Epoch 15, batch 40: Training loss = 0.447, accuracy = 79.7
+Epoch 15, batch 50: Training loss = 0.556, accuracy = 71.9
+Epoch 15, batch 60: Training loss = 0.588, accuracy = 69.5
+Epoch 15, batch 70: Training loss = 0.568, accuracy = 67.2
+Epoch 15, batch 80: Training loss = 0.522, accuracy = 73.4
+Epoch 15, batch 90: Training loss = 0.540, accuracy = 73.4
+Epoch 15, batch 100: Training loss = 0.480, accuracy = 77.3
+Epoch 15, batch 110: Training loss = 0.432, accuracy = 82.8
+Epoch 15, batch 120: Training loss = 0.596, accuracy = 68.0
+Epoch 15, batch 130: Training loss = 0.452, accuracy = 77.3
+Epoch 15, batch 140: Training loss = 0.517, accuracy = 75.0
+================================================================================
+Epoch 15: Validation (1000 items) loss = 0.534, accuracy = 73.9
+================================================================================
+Epoch 16, batch 0: Training loss = 0.456, accuracy = 79.7
+Epoch 16, batch 10: Training loss = 0.482, accuracy = 77.3
+Epoch 16, batch 20: Training loss = 0.520, accuracy = 72.7
+Epoch 16, batch 30: Training loss = 0.481, accuracy = 75.8
+Epoch 16, batch 40: Training loss = 0.540, accuracy = 69.5
+Epoch 16, batch 50: Training loss = 0.505, accuracy = 75.8
+Epoch 16, batch 60: Training loss = 0.429, accuracy = 81.2
+Epoch 16, batch 70: Training loss = 0.499, accuracy = 71.9
+Epoch 16, batch 80: Training loss = 0.520, accuracy = 73.4
+Epoch 16, batch 90: Training loss = 0.421, accuracy = 81.2
+Epoch 16, batch 100: Training loss = 0.505, accuracy = 75.0
+Epoch 16, batch 110: Training loss = 0.463, accuracy = 78.9
+Epoch 16, batch 120: Training loss = 0.528, accuracy = 76.6
+Epoch 16, batch 130: Training loss = 0.581, accuracy = 70.3
+Epoch 16, batch 140: Training loss = 0.438, accuracy = 77.3
+================================================================================
+Epoch 16: Validation (1000 items) loss = 0.578, accuracy = 70.3
+================================================================================
+Epoch 17, batch 0: Training loss = 0.531, accuracy = 73.4
+Epoch 17, batch 10: Training loss = 0.439, accuracy = 80.5
+Epoch 17, batch 20: Training loss = 0.415, accuracy = 84.4
+Epoch 17, batch 30: Training loss = 0.491, accuracy = 76.6
+Epoch 17, batch 40: Training loss = 0.478, accuracy = 78.1
+Epoch 17, batch 50: Training loss = 0.486, accuracy = 78.1
+Epoch 17, batch 60: Training loss = 0.558, accuracy = 69.5
+Epoch 17, batch 70: Training loss = 0.553, accuracy = 73.4
+Epoch 17, batch 80: Training loss = 0.427, accuracy = 79.7
+Epoch 17, batch 90: Training loss = 0.483, accuracy = 78.1
+Epoch 17, batch 100: Training loss = 0.772, accuracy = 64.8
+Epoch 17, batch 110: Training loss = 0.443, accuracy = 79.7
+Epoch 17, batch 120: Training loss = 0.451, accuracy = 82.0
+Epoch 17, batch 130: Training loss = 0.432, accuracy = 78.9
+Epoch 17, batch 140: Training loss = 0.443, accuracy = 78.9
+================================================================================
+Epoch 17: Validation (1000 items) loss = 0.498, accuracy = 76.3
+================================================================================
+Epoch 18, batch 0: Training loss = 0.492, accuracy = 73.4
+Epoch 18, batch 10: Training loss = 0.489, accuracy = 78.1
+Epoch 18, batch 20: Training loss = 0.486, accuracy = 76.6
+Epoch 18, batch 30: Training loss = 0.408, accuracy = 82.8
+Epoch 18, batch 40: Training loss = 0.510, accuracy = 75.8
+Epoch 18, batch 50: Training loss = 0.430, accuracy = 81.2
+Epoch 18, batch 60: Training loss = 0.446, accuracy = 81.2
+Epoch 18, batch 70: Training loss = 0.465, accuracy = 78.9
+Epoch 18, batch 80: Training loss = 0.436, accuracy = 80.5
+Epoch 18, batch 90: Training loss = 0.493, accuracy = 75.8
+Epoch 18, batch 100: Training loss = 0.529, accuracy = 74.2
+Epoch 18, batch 110: Training loss = 0.477, accuracy = 75.0
+Epoch 18, batch 120: Training loss = 0.466, accuracy = 82.0
+Epoch 18, batch 130: Training loss = 0.470, accuracy = 75.8
+Epoch 18, batch 140: Training loss = 0.393, accuracy = 82.0
+================================================================================
+Epoch 18: Validation (1000 items) loss = 0.504, accuracy = 75.2
+================================================================================
+Epoch 19, batch 0: Training loss = 0.427, accuracy = 82.0
+Epoch 19, batch 10: Training loss = 0.442, accuracy = 76.6
+Epoch 19, batch 20: Training loss = 0.358, accuracy = 85.9
+Epoch 19, batch 30: Training loss = 0.445, accuracy = 78.9
+Epoch 19, batch 40: Training loss = 0.417, accuracy = 79.7
+Epoch 19, batch 50: Training loss = 0.439, accuracy = 82.8
+Epoch 19, batch 60: Training loss = 0.389, accuracy = 82.8
+Epoch 19, batch 70: Training loss = 0.447, accuracy = 75.8
+Epoch 19, batch 80: Training loss = 0.460, accuracy = 80.5
+Epoch 19, batch 90: Training loss = 0.386, accuracy = 81.2
+Epoch 19, batch 100: Training loss = 0.369, accuracy = 85.9
+Epoch 19, batch 110: Training loss = 0.501, accuracy = 76.6
+Epoch 19, batch 120: Training loss = 0.534, accuracy = 76.6
+Epoch 19, batch 130: Training loss = 0.454, accuracy = 77.3
+Epoch 19, batch 140: Training loss = 0.434, accuracy = 82.8
+================================================================================
+Epoch 19: Validation (1000 items) loss = 0.472, accuracy = 77.4
+================================================================================
+Epoch 20, batch 0: Training loss = 0.448, accuracy = 79.7
+Epoch 20, batch 10: Training loss = 0.449, accuracy = 77.3
+Epoch 20, batch 20: Training loss = 0.393, accuracy = 82.0
+Epoch 20, batch 30: Training loss = 0.387, accuracy = 85.2
+Epoch 20, batch 40: Training loss = 0.416, accuracy = 78.1
+Epoch 20, batch 50: Training loss = 0.409, accuracy = 78.9
+Epoch 20, batch 60: Training loss = 0.381, accuracy = 82.8
+Epoch 20, batch 70: Training loss = 0.407, accuracy = 80.5
+Epoch 20, batch 80: Training loss = 0.354, accuracy = 87.5
+Epoch 20, batch 90: Training loss = 0.519, accuracy = 75.8
+Epoch 20, batch 100: Training loss = 0.438, accuracy = 78.1
+Epoch 20, batch 110: Training loss = 0.378, accuracy = 82.8
+Epoch 20, batch 120: Training loss = 0.457, accuracy = 78.1
+Epoch 20, batch 130: Training loss = 0.483, accuracy = 77.3
+Epoch 20, batch 140: Training loss = 0.414, accuracy = 80.5
+================================================================================
+Epoch 20: Validation (1000 items) loss = 0.572, accuracy = 70.7
+================================================================================
+Epoch 21, batch 0: Training loss = 0.515, accuracy = 78.1
+Epoch 21, batch 10: Training loss = 0.438, accuracy = 79.7
+Epoch 21, batch 20: Training loss = 0.387, accuracy = 79.7
+Epoch 21, batch 30: Training loss = 0.404, accuracy = 78.9
+Epoch 21, batch 40: Training loss = 0.356, accuracy = 85.9
+Epoch 21, batch 50: Training loss = 0.528, accuracy = 77.3
+Epoch 21, batch 60: Training loss = 0.407, accuracy = 78.9
+Epoch 21, batch 70: Training loss = 0.320, accuracy = 83.6
+Epoch 21, batch 80: Training loss = 0.407, accuracy = 82.8
+Epoch 21, batch 90: Training loss = 0.406, accuracy = 79.7
+Epoch 21, batch 100: Training loss = 0.436, accuracy = 79.7
+Epoch 21, batch 110: Training loss = 0.312, accuracy = 89.1
+Epoch 21, batch 120: Training loss = 0.373, accuracy = 82.0
+Epoch 21, batch 130: Training loss = 0.435, accuracy = 76.6
+Epoch 21, batch 140: Training loss = 0.372, accuracy = 84.4
+================================================================================
+Epoch 21: Validation (1000 items) loss = 0.483, accuracy = 76.7
+================================================================================
+Epoch 22, batch 0: Training loss = 0.408, accuracy = 80.5
+Epoch 22, batch 10: Training loss = 0.389, accuracy = 83.6
+Epoch 22, batch 20: Training loss = 0.398, accuracy = 80.5
+Epoch 22, batch 30: Training loss = 0.471, accuracy = 76.6
+Epoch 22, batch 40: Training loss = 0.349, accuracy = 85.9
+Epoch 22, batch 50: Training loss = 0.427, accuracy = 80.5
+Epoch 22, batch 60: Training loss = 0.454, accuracy = 80.5
+Epoch 22, batch 70: Training loss = 0.500, accuracy = 71.1
+Epoch 22, batch 80: Training loss = 0.338, accuracy = 83.6
+Epoch 22, batch 90: Training loss = 0.317, accuracy = 86.7
+Epoch 22, batch 100: Training loss = 0.414, accuracy = 79.7
+Epoch 22, batch 110: Training loss = 0.428, accuracy = 79.7
+Epoch 22, batch 120: Training loss = 0.359, accuracy = 84.4
+Epoch 22, batch 130: Training loss = 0.421, accuracy = 80.5
+Epoch 22, batch 140: Training loss = 0.370, accuracy = 82.0
+================================================================================
+Epoch 22: Validation (1000 items) loss = 0.455, accuracy = 77.7
+================================================================================
+Epoch 23, batch 0: Training loss = 0.348, accuracy = 85.2
+Epoch 23, batch 10: Training loss = 0.555, accuracy = 68.8
+Epoch 23, batch 20: Training loss = 0.364, accuracy = 84.4
+Epoch 23, batch 30: Training loss = 0.409, accuracy = 83.6
+Epoch 23, batch 40: Training loss = 0.400, accuracy = 79.7
+Epoch 23, batch 50: Training loss = 0.380, accuracy = 81.2
+Epoch 23, batch 60: Training loss = 0.303, accuracy = 86.7
+Epoch 23, batch 70: Training loss = 0.575, accuracy = 74.2
+Epoch 23, batch 80: Training loss = 0.345, accuracy = 87.5
+Epoch 23, batch 90: Training loss = 0.351, accuracy = 84.4
+Epoch 23, batch 100: Training loss = 0.328, accuracy = 87.5
+Epoch 23, batch 110: Training loss = 0.339, accuracy = 83.6
+Epoch 23, batch 120: Training loss = 0.508, accuracy = 75.8
+Epoch 23, batch 130: Training loss = 0.327, accuracy = 87.5
+Epoch 23, batch 140: Training loss = 0.362, accuracy = 84.4
+================================================================================
+Epoch 23: Validation (1000 items) loss = 0.454, accuracy = 79.6
+================================================================================
+Epoch 24, batch 0: Training loss = 0.308, accuracy = 84.4
+Epoch 24, batch 10: Training loss = 0.472, accuracy = 80.5
+Epoch 24, batch 20: Training loss = 0.464, accuracy = 82.0
+Epoch 24, batch 30: Training loss = 0.388, accuracy = 82.0
+Epoch 24, batch 40: Training loss = 0.265, accuracy = 89.1
+Epoch 24, batch 50: Training loss = 0.348, accuracy = 86.7
+Epoch 24, batch 60: Training loss = 0.432, accuracy = 82.8
+Epoch 24, batch 70: Training loss = 0.368, accuracy = 83.6
+Epoch 24, batch 80: Training loss = 0.385, accuracy = 82.0
+Epoch 24, batch 90: Training loss = 0.360, accuracy = 85.2
+Epoch 24, batch 100: Training loss = 0.325, accuracy = 85.2
+Epoch 24, batch 110: Training loss = 0.515, accuracy = 75.0
+Epoch 24, batch 120: Training loss = 0.415, accuracy = 82.0
+Epoch 24, batch 130: Training loss = 0.309, accuracy = 83.6
+Epoch 24, batch 140: Training loss = 0.248, accuracy = 89.1
+================================================================================
+Epoch 24: Validation (1000 items) loss = 0.458, accuracy = 79.3
+================================================================================
+Epoch 25, batch 0: Training loss = 0.365, accuracy = 86.7
+Epoch 25, batch 10: Training loss = 0.287, accuracy = 87.5
+Epoch 25, batch 20: Training loss = 0.322, accuracy = 87.5
+Epoch 25, batch 30: Training loss = 0.398, accuracy = 85.2
+Epoch 25, batch 40: Training loss = 0.335, accuracy = 82.8
+Epoch 25, batch 50: Training loss = 0.243, accuracy = 89.8
+Epoch 25, batch 60: Training loss = 0.485, accuracy = 77.3
+Epoch 25, batch 70: Training loss = 0.299, accuracy = 84.4
+Epoch 25, batch 80: Training loss = 0.350, accuracy = 85.9
+Epoch 25, batch 90: Training loss = 0.325, accuracy = 84.4
+Epoch 25, batch 100: Training loss = 0.425, accuracy = 82.0
+Epoch 25, batch 110: Training loss = 0.315, accuracy = 85.2
+Epoch 25, batch 120: Training loss = 0.317, accuracy = 85.2
+Epoch 25, batch 130: Training loss = 0.415, accuracy = 82.0
+Epoch 25, batch 140: Training loss = 0.369, accuracy = 83.6
+================================================================================
+Epoch 25: Validation (1000 items) loss = 0.446, accuracy = 80.5
+================================================================================
+Epoch 26, batch 0: Training loss = 0.308, accuracy = 86.7
+Epoch 26, batch 10: Training loss = 0.333, accuracy = 86.7
+Epoch 26, batch 20: Training loss = 0.364, accuracy = 79.7
+Epoch 26, batch 30: Training loss = 0.329, accuracy = 83.6
+Epoch 26, batch 40: Training loss = 0.593, accuracy = 75.8
+Epoch 26, batch 50: Training loss = 0.278, accuracy = 89.1
+Epoch 26, batch 60: Training loss = 0.326, accuracy = 85.2
+Epoch 26, batch 70: Training loss = 0.302, accuracy = 90.6
+Epoch 26, batch 80: Training loss = 0.352, accuracy = 85.9
+Epoch 26, batch 90: Training loss = 0.285, accuracy = 89.1
+Epoch 26, batch 100: Training loss = 0.316, accuracy = 88.3
+Epoch 26, batch 110: Training loss = 0.337, accuracy = 82.8
+Epoch 26, batch 120: Training loss = 0.404, accuracy = 83.6
+Epoch 26, batch 130: Training loss = 0.248, accuracy = 90.6
+Epoch 26, batch 140: Training loss = 0.356, accuracy = 82.8
+================================================================================
+Epoch 26: Validation (1000 items) loss = 0.563, accuracy = 73.8
+================================================================================
+Epoch 27, batch 0: Training loss = 0.348, accuracy = 85.2
+Epoch 27, batch 10: Training loss = 0.260, accuracy = 89.1
+Epoch 27, batch 20: Training loss = 0.225, accuracy = 91.4
+Epoch 27, batch 30: Training loss = 0.289, accuracy = 91.4
+Epoch 27, batch 40: Training loss = 0.310, accuracy = 85.9
+Epoch 27, batch 50: Training loss = 0.347, accuracy = 86.7
+Epoch 27, batch 60: Training loss = 0.301, accuracy = 85.2
+Epoch 27, batch 70: Training loss = 0.242, accuracy = 90.6
+Epoch 27, batch 80: Training loss = 0.226, accuracy = 92.2
+Epoch 27, batch 90: Training loss = 0.286, accuracy = 89.1
+Epoch 27, batch 100: Training loss = 0.326, accuracy = 86.7
+Epoch 27, batch 110: Training loss = 0.280, accuracy = 87.5
+Epoch 27, batch 120: Training loss = 0.237, accuracy = 88.3
+Epoch 27, batch 130: Training loss = 0.311, accuracy = 88.3
+Epoch 27, batch 140: Training loss = 0.302, accuracy = 87.5
+================================================================================
+Epoch 27: Validation (1000 items) loss = 0.492, accuracy = 77.7
+================================================================================
+Epoch 28, batch 0: Training loss = 0.337, accuracy = 87.5
+Epoch 28, batch 10: Training loss = 0.351, accuracy = 83.6
+Epoch 28, batch 20: Training loss = 0.272, accuracy = 88.3
+Epoch 28, batch 30: Training loss = 0.277, accuracy = 88.3
+Epoch 28, batch 40: Training loss = 0.356, accuracy = 84.4
+Epoch 28, batch 50: Training loss = 0.299, accuracy = 87.5
+Epoch 28, batch 60: Training loss = 0.430, accuracy = 83.6
+Epoch 28, batch 70: Training loss = 0.413, accuracy = 77.3
+Epoch 28, batch 80: Training loss = 0.278, accuracy = 87.5
+Epoch 28, batch 90: Training loss = 0.220, accuracy = 89.8
+Epoch 28, batch 100: Training loss = 0.280, accuracy = 85.9
+Epoch 28, batch 110: Training loss = 0.250, accuracy = 89.1
+Epoch 28, batch 120: Training loss = 0.289, accuracy = 85.2
+Epoch 28, batch 130: Training loss = 0.255, accuracy = 89.1
+Epoch 28, batch 140: Training loss = 0.333, accuracy = 84.4
+================================================================================
+Epoch 28: Validation (1000 items) loss = 0.478, accuracy = 79.7
+================================================================================
+Epoch 29, batch 0: Training loss = 0.227, accuracy = 86.7
+Epoch 29, batch 10: Training loss = 0.225, accuracy = 90.6
+Epoch 29, batch 20: Training loss = 0.282, accuracy = 89.1
+Epoch 29, batch 30: Training loss = 0.437, accuracy = 83.6
+Epoch 29, batch 40: Training loss = 0.284, accuracy = 86.7
+Epoch 29, batch 50: Training loss = 0.291, accuracy = 86.7
+Epoch 29, batch 60: Training loss = 0.268, accuracy = 85.2
+Epoch 29, batch 70: Training loss = 0.261, accuracy = 85.9
+Epoch 29, batch 80: Training loss = 0.313, accuracy = 85.9
+Epoch 29, batch 90: Training loss = 0.204, accuracy = 93.0
+Epoch 29, batch 100: Training loss = 0.219, accuracy = 89.8
+Epoch 29, batch 110: Training loss = 0.335, accuracy = 85.9
+Epoch 29, batch 120: Training loss = 0.255, accuracy = 87.5
+Epoch 29, batch 130: Training loss = 0.284, accuracy = 87.5
+Epoch 29, batch 140: Training loss = 0.228, accuracy = 89.1
+================================================================================
+Epoch 29: Validation (1000 items) loss = 0.454, accuracy = 80.5
+================================================================================
+Epoch 30, batch 0: Training loss = 0.256, accuracy = 88.3
+Epoch 30, batch 10: Training loss = 0.193, accuracy = 90.6
+Epoch 30, batch 20: Training loss = 0.205, accuracy = 93.8
+Epoch 30, batch 30: Training loss = 0.385, accuracy = 82.0
+Epoch 30, batch 40: Training loss = 0.165, accuracy = 94.5
+Epoch 30, batch 50: Training loss = 0.218, accuracy = 91.4
+Epoch 30, batch 60: Training loss = 0.216, accuracy = 93.0
+Epoch 30, batch 70: Training loss = 0.239, accuracy = 89.8
+Epoch 30, batch 80: Training loss = 0.219, accuracy = 91.4
+Epoch 30, batch 90: Training loss = 0.195, accuracy = 93.0
+Epoch 30, batch 100: Training loss = 0.175, accuracy = 93.8
+Epoch 30, batch 110: Training loss = 0.213, accuracy = 93.0
+Epoch 30, batch 120: Training loss = 0.224, accuracy = 93.0
+Epoch 30, batch 130: Training loss = 0.220, accuracy = 88.3
+Epoch 30, batch 140: Training loss = 0.255, accuracy = 87.5
+================================================================================
+Epoch 30: Validation (1000 items) loss = 0.534, accuracy = 80.3
+================================================================================
+Epoch 31, batch 0: Training loss = 0.206, accuracy = 90.6
+Epoch 31, batch 10: Training loss = 0.200, accuracy = 89.8
+Epoch 31, batch 20: Training loss = 0.240, accuracy = 88.3
+Epoch 31, batch 30: Training loss = 0.181, accuracy = 92.2
+Epoch 31, batch 40: Training loss = 0.395, accuracy = 83.6
+Epoch 31, batch 50: Training loss = 0.302, accuracy = 85.9
+Epoch 31, batch 60: Training loss = 0.189, accuracy = 93.8
+Epoch 31, batch 70: Training loss = 0.199, accuracy = 91.4
+Epoch 31, batch 80: Training loss = 0.289, accuracy = 86.7
+Epoch 31, batch 90: Training loss = 0.169, accuracy = 90.6
+Epoch 31, batch 100: Training loss = 0.249, accuracy = 91.4
+Epoch 31, batch 110: Training loss = 0.184, accuracy = 92.2
+Epoch 31, batch 120: Training loss = 0.273, accuracy = 85.2
+Epoch 31, batch 130: Training loss = 0.218, accuracy = 89.1
+Epoch 31, batch 140: Training loss = 0.165, accuracy = 93.0
+================================================================================
+Epoch 31: Validation (1000 items) loss = 0.600, accuracy = 77.4
+================================================================================
+Epoch 32, batch 0: Training loss = 0.219, accuracy = 87.5
+Epoch 32, batch 10: Training loss = 0.258, accuracy = 91.4
+Epoch 32, batch 20: Training loss = 0.148, accuracy = 95.3
+Epoch 32, batch 30: Training loss = 0.148, accuracy = 93.0
+Epoch 32, batch 40: Training loss = 0.187, accuracy = 93.8
+Epoch 32, batch 50: Training loss = 0.311, accuracy = 83.6
+Epoch 32, batch 60: Training loss = 0.170, accuracy = 91.4
+Epoch 32, batch 70: Training loss = 0.367, accuracy = 85.2
+Epoch 32, batch 80: Training loss = 0.239, accuracy = 89.1
+Epoch 32, batch 90: Training loss = 0.200, accuracy = 90.6
+Epoch 32, batch 100: Training loss = 0.231, accuracy = 91.4
+Epoch 32, batch 110: Training loss = 0.172, accuracy = 93.8
+Epoch 32, batch 120: Training loss = 0.241, accuracy = 91.4
+Epoch 32, batch 130: Training loss = 0.311, accuracy = 90.6
+Epoch 32, batch 140: Training loss = 0.174, accuracy = 93.8
+================================================================================
+Epoch 32: Validation (1000 items) loss = 0.579, accuracy = 77.8
+================================================================================
+Epoch 33, batch 0: Training loss = 0.218, accuracy = 89.8
+Epoch 33, batch 10: Training loss = 0.155, accuracy = 94.5
+Epoch 33, batch 20: Training loss = 0.206, accuracy = 92.2
+Epoch 33, batch 30: Training loss = 0.159, accuracy = 91.4
+Epoch 33, batch 40: Training loss = 0.195, accuracy = 94.5
+Epoch 33, batch 50: Training loss = 0.160, accuracy = 94.5
+Epoch 33, batch 60: Training loss = 0.110, accuracy = 96.9
+Epoch 33, batch 70: Training loss = 0.139, accuracy = 92.2
+Epoch 33, batch 80: Training loss = 0.145, accuracy = 93.0
+Epoch 33, batch 90: Training loss = 0.147, accuracy = 93.8
+Epoch 33, batch 100: Training loss = 0.271, accuracy = 87.5
+Epoch 33, batch 110: Training loss = 0.142, accuracy = 95.3
+Epoch 33, batch 120: Training loss = 0.187, accuracy = 91.4
+Epoch 33, batch 130: Training loss = 0.115, accuracy = 96.9
+Epoch 33, batch 140: Training loss = 0.139, accuracy = 93.0
+================================================================================
+Epoch 33: Validation (1000 items) loss = 0.693, accuracy = 76.9
+================================================================================
+Epoch 34, batch 0: Training loss = 0.202, accuracy = 89.8
+Epoch 34, batch 10: Training loss = 0.154, accuracy = 93.0
+Epoch 34, batch 20: Training loss = 0.218, accuracy = 93.0
+Epoch 34, batch 30: Training loss = 0.089, accuracy = 97.7
+Epoch 34, batch 40: Training loss = 0.116, accuracy = 96.9
+Epoch 34, batch 50: Training loss = 0.239, accuracy = 88.3
+Epoch 34, batch 60: Training loss = 0.192, accuracy = 90.6
+Epoch 34, batch 70: Training loss = 0.162, accuracy = 93.8
+Epoch 34, batch 80: Training loss = 0.492, accuracy = 79.7
+Epoch 34, batch 90: Training loss = 0.152, accuracy = 95.3
+Epoch 34, batch 100: Training loss = 0.141, accuracy = 95.3
+Epoch 34, batch 110: Training loss = 0.154, accuracy = 94.5
+Epoch 34, batch 120: Training loss = 0.179, accuracy = 93.0
+Epoch 34, batch 130: Training loss = 0.237, accuracy = 87.5
+Epoch 34, batch 140: Training loss = 0.134, accuracy = 96.9
+================================================================================
+Epoch 34: Validation (1000 items) loss = 0.649, accuracy = 78.0
+================================================================================
+Epoch 35, batch 0: Training loss = 0.182, accuracy = 94.5
+Epoch 35, batch 10: Training loss = 0.086, accuracy = 97.7
+Epoch 35, batch 20: Training loss = 0.218, accuracy = 89.1
+Epoch 35, batch 30: Training loss = 0.145, accuracy = 93.8
+Epoch 35, batch 40: Training loss = 0.089, accuracy = 96.9
+Epoch 35, batch 50: Training loss = 0.308, accuracy = 86.7
+Epoch 35, batch 60: Training loss = 0.177, accuracy = 93.8
+Epoch 35, batch 70: Training loss = 0.085, accuracy = 97.7
+Epoch 35, batch 80: Training loss = 0.082, accuracy = 96.9
+Epoch 35, batch 90: Training loss = 0.173, accuracy = 93.0
+Epoch 35, batch 100: Training loss = 0.384, accuracy = 86.7
+Epoch 35, batch 110: Training loss = 0.201, accuracy = 93.0
+Epoch 35, batch 120: Training loss = 0.115, accuracy = 95.3
+Epoch 35, batch 130: Training loss = 0.138, accuracy = 94.5
+Epoch 35, batch 140: Training loss = 0.159, accuracy = 92.2
+================================================================================
+Epoch 35: Validation (1000 items) loss = 0.613, accuracy = 79.3
+================================================================================
+Epoch 36, batch 0: Training loss = 0.145, accuracy = 95.3
+Epoch 36, batch 10: Training loss = 0.164, accuracy = 93.8
+Epoch 36, batch 20: Training loss = 0.063, accuracy = 98.4
+Epoch 36, batch 30: Training loss = 0.165, accuracy = 95.3
+Epoch 36, batch 40: Training loss = 0.119, accuracy = 95.3
+Epoch 36, batch 50: Training loss = 0.171, accuracy = 93.8
+Epoch 36, batch 60: Training loss = 0.076, accuracy = 96.9
+Epoch 36, batch 70: Training loss = 0.155, accuracy = 93.0
+Epoch 36, batch 80: Training loss = 0.123, accuracy = 93.8
+Epoch 36, batch 90: Training loss = 0.049, accuracy = 98.4
+Epoch 36, batch 100: Training loss = 0.092, accuracy = 96.9
+Epoch 36, batch 110: Training loss = 0.142, accuracy = 92.2
+Epoch 36, batch 120: Training loss = 0.106, accuracy = 95.3
+Epoch 36, batch 130: Training loss = 0.355, accuracy = 85.2
+Epoch 36, batch 140: Training loss = 0.126, accuracy = 96.1
+================================================================================
+Epoch 36: Validation (1000 items) loss = 0.597, accuracy = 79.5
+================================================================================
+Epoch 37, batch 0: Training loss = 0.080, accuracy = 96.9
+Epoch 37, batch 10: Training loss = 0.080, accuracy = 96.1
+Epoch 37, batch 20: Training loss = 0.099, accuracy = 95.3
+Epoch 37, batch 30: Training loss = 0.060, accuracy = 98.4
+Epoch 37, batch 40: Training loss = 0.087, accuracy = 97.7
+Epoch 37, batch 50: Training loss = 0.085, accuracy = 96.9
+Epoch 37, batch 60: Training loss = 0.123, accuracy = 95.3
+Epoch 37, batch 70: Training loss = 0.142, accuracy = 96.9
+Epoch 37, batch 80: Training loss = 0.084, accuracy = 97.7
+Epoch 37, batch 90: Training loss = 0.069, accuracy = 98.4
+Epoch 37, batch 100: Training loss = 0.119, accuracy = 94.5
+Epoch 37, batch 110: Training loss = 0.138, accuracy = 93.8
+Epoch 37, batch 120: Training loss = 0.191, accuracy = 91.4
+Epoch 37, batch 130: Training loss = 0.144, accuracy = 93.0
+Epoch 37, batch 140: Training loss = 0.142, accuracy = 93.8
+================================================================================
+Epoch 37: Validation (1000 items) loss = 0.683, accuracy = 78.5
+================================================================================
+Epoch 38, batch 0: Training loss = 0.080, accuracy = 96.9
+Epoch 38, batch 10: Training loss = 0.084, accuracy = 96.9
+Epoch 38, batch 20: Training loss = 0.050, accuracy = 98.4
+Epoch 38, batch 30: Training loss = 0.120, accuracy = 94.5
+Epoch 38, batch 40: Training loss = 0.071, accuracy = 96.9
+Epoch 38, batch 50: Training loss = 0.116, accuracy = 96.1
+Epoch 38, batch 60: Training loss = 0.129, accuracy = 94.5
+Epoch 38, batch 70: Training loss = 0.089, accuracy = 97.7
+Epoch 38, batch 80: Training loss = 0.102, accuracy = 95.3
+Epoch 38, batch 90: Training loss = 0.152, accuracy = 94.5
+Epoch 38, batch 100: Training loss = 0.099, accuracy = 96.1
+Epoch 38, batch 110: Training loss = 0.340, accuracy = 83.6
+Epoch 38, batch 120: Training loss = 0.166, accuracy = 95.3
+Epoch 38, batch 130: Training loss = 0.076, accuracy = 98.4
+Epoch 38, batch 140: Training loss = 0.132, accuracy = 93.0
+================================================================================
+Epoch 38: Validation (1000 items) loss = 0.821, accuracy = 78.1
+================================================================================
+Epoch 39, batch 0: Training loss = 0.072, accuracy = 97.7
+Epoch 39, batch 10: Training loss = 0.075, accuracy = 96.1
+Epoch 39, batch 20: Training loss = 0.043, accuracy = 99.2
+Epoch 39, batch 30: Training loss = 0.069, accuracy = 96.1
+Epoch 39, batch 40: Training loss = 0.092, accuracy = 94.5
+Epoch 39, batch 50: Training loss =   nan, accuracy = 51.6
+Epoch 39, batch 60: Training loss =   nan, accuracy = 49.2
+Epoch 39, batch 70: Training loss =   nan, accuracy = 48.4
+Epoch 39, batch 80: Training loss =   nan, accuracy = 51.6
+Epoch 39, batch 90: Training loss =   nan, accuracy = 47.7
+Epoch 39, batch 100: Training loss =   nan, accuracy = 41.4
+Epoch 39, batch 110: Training loss =   nan, accuracy = 53.9
+Epoch 39, batch 120: Training loss =   nan, accuracy = 51.6
+Epoch 39, batch 130: Training loss =   nan, accuracy = 46.9
+Epoch 39, batch 140: Training loss =   nan, accuracy = 50.8
+================================================================================
+Epoch 39: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
+Epoch 40, batch 0: Training loss =   nan, accuracy = 50.8
+Epoch 40, batch 10: Training loss =   nan, accuracy = 51.6
+Epoch 40, batch 20: Training loss =   nan, accuracy = 51.6
+Epoch 40, batch 30: Training loss =   nan, accuracy = 52.3
+Epoch 40, batch 40: Training loss =   nan, accuracy = 46.9
+Epoch 40, batch 50: Training loss =   nan, accuracy = 56.2
+Epoch 40, batch 60: Training loss =   nan, accuracy = 43.8
+Epoch 40, batch 70: Training loss =   nan, accuracy = 49.2
+Epoch 40, batch 80: Training loss =   nan, accuracy = 54.7
+Epoch 40, batch 90: Training loss =   nan, accuracy = 50.0
+Epoch 40, batch 100: Training loss =   nan, accuracy = 50.0
+Epoch 40, batch 110: Training loss =   nan, accuracy = 46.9
+Epoch 40, batch 120: Training loss =   nan, accuracy = 56.2
+Epoch 40, batch 130: Training loss =   nan, accuracy = 53.1
+Epoch 40, batch 140: Training loss =   nan, accuracy = 46.1
+================================================================================
+Epoch 40: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
+Epoch 41, batch 0: Training loss =   nan, accuracy = 51.6
+Epoch 41, batch 10: Training loss =   nan, accuracy = 52.3
+Epoch 41, batch 20: Training loss =   nan, accuracy = 42.2
+Epoch 41, batch 30: Training loss =   nan, accuracy = 46.1
+Epoch 41, batch 40: Training loss =   nan, accuracy = 52.3
+Epoch 41, batch 50: Training loss =   nan, accuracy = 54.7
+Epoch 41, batch 60: Training loss =   nan, accuracy = 50.8
+Epoch 41, batch 70: Training loss =   nan, accuracy = 53.9
+Epoch 41, batch 80: Training loss =   nan, accuracy = 55.5
+Epoch 41, batch 90: Training loss =   nan, accuracy = 49.2
+Epoch 41, batch 100: Training loss =   nan, accuracy = 52.3
+Epoch 41, batch 110: Training loss =   nan, accuracy = 50.0
+Epoch 41, batch 120: Training loss =   nan, accuracy = 47.7
+Epoch 41, batch 130: Training loss =   nan, accuracy = 56.2
+Epoch 41, batch 140: Training loss =   nan, accuracy = 43.0
+================================================================================
+Epoch 41: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
+Epoch 42, batch 0: Training loss =   nan, accuracy = 50.0
+Epoch 42, batch 10: Training loss =   nan, accuracy = 49.2
+Epoch 42, batch 20: Training loss =   nan, accuracy = 46.9
+Epoch 42, batch 30: Training loss =   nan, accuracy = 51.6
+Epoch 42, batch 40: Training loss =   nan, accuracy = 57.8
+Epoch 42, batch 50: Training loss =   nan, accuracy = 46.1
+Epoch 42, batch 60: Training loss =   nan, accuracy = 53.9
+Epoch 42, batch 70: Training loss =   nan, accuracy = 53.9
+Epoch 42, batch 80: Training loss =   nan, accuracy = 53.9
+Epoch 42, batch 90: Training loss =   nan, accuracy = 43.8
+Epoch 42, batch 100: Training loss =   nan, accuracy = 50.0
+Epoch 42, batch 110: Training loss =   nan, accuracy = 57.8
+Epoch 42, batch 120: Training loss =   nan, accuracy = 40.6
+Epoch 42, batch 130: Training loss =   nan, accuracy = 48.4
+Epoch 42, batch 140: Training loss =   nan, accuracy = 46.1
+================================================================================
+Epoch 42: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
+Epoch 43, batch 0: Training loss =   nan, accuracy = 43.0
+Epoch 43, batch 10: Training loss =   nan, accuracy = 46.9
+Epoch 43, batch 20: Training loss =   nan, accuracy = 50.8
+Epoch 43, batch 30: Training loss =   nan, accuracy = 51.6
+Epoch 43, batch 40: Training loss =   nan, accuracy = 53.1
+Epoch 43, batch 50: Training loss =   nan, accuracy = 48.4
+Epoch 43, batch 60: Training loss =   nan, accuracy = 39.8
+Epoch 43, batch 70: Training loss =   nan, accuracy = 49.2
+Epoch 43, batch 80: Training loss =   nan, accuracy = 44.5
+Epoch 43, batch 90: Training loss =   nan, accuracy = 53.9
+Epoch 43, batch 100: Training loss =   nan, accuracy = 55.5
+Epoch 43, batch 110: Training loss =   nan, accuracy = 52.3
+Epoch 43, batch 120: Training loss =   nan, accuracy = 46.1
+Epoch 43, batch 130: Training loss =   nan, accuracy = 55.5
+Epoch 43, batch 140: Training loss =   nan, accuracy = 60.2
+================================================================================
+Epoch 43: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
+Epoch 44, batch 0: Training loss =   nan, accuracy = 48.4
+Epoch 44, batch 10: Training loss =   nan, accuracy = 48.4
+Epoch 44, batch 20: Training loss =   nan, accuracy = 53.1
+Epoch 44, batch 30: Training loss =   nan, accuracy = 50.8
+Epoch 44, batch 40: Training loss =   nan, accuracy = 48.4
+Epoch 44, batch 50: Training loss =   nan, accuracy = 52.3
+Epoch 44, batch 60: Training loss =   nan, accuracy = 50.0
+Epoch 44, batch 70: Training loss =   nan, accuracy = 42.2
+Epoch 44, batch 80: Training loss =   nan, accuracy = 47.7
+Epoch 44, batch 90: Training loss =   nan, accuracy = 50.8
+Epoch 44, batch 100: Training loss =   nan, accuracy = 51.6
+Epoch 44, batch 110: Training loss =   nan, accuracy = 47.7
+Epoch 44, batch 120: Training loss =   nan, accuracy = 48.4
+Epoch 44, batch 130: Training loss =   nan, accuracy = 57.0
+Epoch 44, batch 140: Training loss =   nan, accuracy = 50.8
+================================================================================
+Epoch 44: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
+Epoch 45, batch 0: Training loss =   nan, accuracy = 47.7
+Epoch 45, batch 10: Training loss =   nan, accuracy = 52.3
+Epoch 45, batch 20: Training loss =   nan, accuracy = 43.0
+Epoch 45, batch 30: Training loss =   nan, accuracy = 45.3
+Epoch 45, batch 40: Training loss =   nan, accuracy = 44.5
+Epoch 45, batch 50: Training loss =   nan, accuracy = 51.6
+Epoch 45, batch 60: Training loss =   nan, accuracy = 52.3
+Epoch 45, batch 70: Training loss =   nan, accuracy = 46.1
+Epoch 45, batch 80: Training loss =   nan, accuracy = 43.0
+Epoch 45, batch 90: Training loss =   nan, accuracy = 49.2
+Epoch 45, batch 100: Training loss =   nan, accuracy = 45.3
+Epoch 45, batch 110: Training loss =   nan, accuracy = 50.0
+Epoch 45, batch 120: Training loss =   nan, accuracy = 50.0
+Epoch 45, batch 130: Training loss =   nan, accuracy = 46.9
+Epoch 45, batch 140: Training loss =   nan, accuracy = 41.4
+================================================================================
+Epoch 45: Validation (1000 items) loss =   nan, accuracy = 49.8
+================================================================================
