@@ -30,7 +30,7 @@ class VggTypeNet(nn.Module):
     Inspired from VGG Net structure
     """
 
-    def __init__(self, width=64, num_classes=2, channel_list=[64, 128, 64]):
+    def __init__(self, width=64, num_classes=1, channel_list=[64, 128, 64]):
         """
         default values set to those for cat vs dog classification
         assuming in_channel = 3

@@ -1,3 +1,4 @@
+import os
 from argparse import ArgumentParser
 import torch
 from torch.utils.data import DataLoader
@@ -13,10 +14,11 @@ import warnings
 # warnings.filterwarnings("ignore")
 
 
-def train(train_folder, device):
+def train(train_folder, device, model_path="data/model/"):
+
+    os.makedirs(model_path, exist_ok=True)
 
     transforms = Compose([ToTensor()])
-
     dataset = ImageFolder(root=train_folder, transform=transforms)
     # dataset = torch.utils.data.Subset(dataset, indices=range(200))
 
@@ -47,9 +49,11 @@ def train(train_folder, device):
     print("Using vgg_channel_list = {}; Number of model parameters = {}".format(
         vgg_channel_list, sum(p.numel() for p in model.parameters() if p.requires_grad)))
 
-    optimizer = torch.optim.SGD(model.parameters(), lr=1e-2)
+    optimizer = torch.optim.SGD(model.parameters(), lr=1e-1)
+    # optimizer = torch.optim.SGD(model.parameters())
 
     max_epoch = 1000
+    best_validn_accuracy = -1
     for epoch in range(max_epoch):
         for idx_batch, batch in enumerate(dataloader_train):
             # print("Shape of the input: {}".format(batch[0].shape))
@@ -68,8 +72,9 @@ def train(train_folder, device):
             train_accuracy = ((torch.sigmoid(y) > 0.5) ==
                               target.byte()).float().mean() * 100
 
-            print("Epoch {}, batch {}: Training loss = {}, accuracy = {}".format(
-                epoch, idx_batch, train_loss, train_accuracy))
+            if(idx_batch % 10 == 0):
+                print("Epoch {}, batch {}: Training loss = {:5.3f}, accuracy = {:4.1f}".format(
+                    epoch, idx_batch, train_loss, train_accuracy))
 
             optimizer.zero_grad()
             train_loss.backward()
@@ -88,8 +93,13 @@ def train(train_folder, device):
         validn_accuracy = ((torch.sigmoid(y_validn) > 0.5)
                            == target_validn.byte()).float().mean() * 100
 
-        print("Epoch {}: Validation ({} items) loss = {}, accuracy = {}".format(
+        print("Epoch {}: Validation ({} items) loss = {:5.3f}, accuracy = {:4.1f}".format(
             epoch, x_validn.shape[0], validn_loss, validn_accuracy))
+
+        if(validn_accuracy > best_validn_accuracy):
+            best_validn_accuracy = validn_accuracy
+            torch.save(model.state_dict(), os.path.join(
+                model_path, "ep{}_accr{:4.1f}.pt".format(epoch, validn_accuracy)))
 
         print(''.join(['=']*80))
         # ---------------------------------------------------------------------
@@ -99,7 +109,9 @@ if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument("--train_folder", type=str, default="data/trainset/",
                         help="Path to the folder having training images")
+    parser.add_argument("--model_path", type=str, default="data/model/",
+                        help="Path to the folder where models to be saved")
 
     args = vars(parser.parse_args())
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    train(args["train_folder"], device=device)
+    train(args["train_folder"], device=device, model_path=args["model_path"])
