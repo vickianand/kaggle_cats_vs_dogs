@@ -33,10 +33,13 @@ def train(train_folder, device, model_path="data/model/"):
         dataset, [train_size, validn_size]
     )
 
-    print("Train set size = {}; Validation set size = {}".format(
-        len(dataset_train), len(dataset_validn)))
+    print(
+        "Train set size = {}; Validation set size = {}".format(
+            len(dataset_train), len(dataset_validn)
+        )
+    )
 
-    # # check if the random division does leads to very skewed distribution across classes
+    # check if the random division does leads to very skewed distribution across classes
     # class0_count = sum([d[1] == 0 for d in dataset_validn])
     # class1_count = len(dataset_validn) - class0_count
     # print("Class-0 count = {}, class-1 count = {}".format(class0_count, class1_count))
@@ -46,8 +49,12 @@ def train(train_folder, device, model_path="data/model/"):
 
     vgg_channel_list = [64, 128, 64]
     model = VggTypeNet(channel_list=vgg_channel_list, num_classes=1).to(device)
-    print("Using vgg_channel_list = {}; Number of model parameters = {}".format(
-        vgg_channel_list, sum(p.numel() for p in model.parameters() if p.requires_grad)))
+    print(
+        "Using vgg_channel_list = {}; Number of model parameters = {}".format(
+            vgg_channel_list,
+            sum(p.numel() for p in model.parameters() if p.requires_grad),
+        )
+    )
 
     optimizer = torch.optim.SGD(model.parameters(), lr=1e-1)
     # optimizer = torch.optim.SGD(model.parameters())
@@ -65,52 +72,74 @@ def train(train_folder, device, model_path="data/model/"):
             model.train()
 
             x, target = batch[0].to(device), batch[1].to(device)
-            y = model(x).reshape(-1,)
+            y = model(x).reshape(-1)
 
             train_loss = F.binary_cross_entropy_with_logits(
-                input=y, target=target.float())
-            train_accuracy = ((torch.sigmoid(y) > 0.5) ==
-                              target.byte()).float().mean() * 100
+                input=y, target=target.float()
+            )
+            train_accuracy = (
+                (torch.sigmoid(y) > 0.5) == target.byte()
+            ).float().mean() * 100
 
-            if(idx_batch % 10 == 0):
-                print("Epoch {}, batch {}: Training loss = {:5.3f}, accuracy = {:4.1f}".format(
-                    epoch, idx_batch, train_loss, train_accuracy))
+            if idx_batch % 10 == 0:
+                print(
+                    "Epoch {}, batch {}: Training loss = {:5.3f}, accuracy = {:4.1f}".format(
+                        epoch, idx_batch, train_loss, train_accuracy
+                    )
+                )
 
             optimizer.zero_grad()
             train_loss.backward()
             optimizer.step()
 
         # ---------------------------------------------------------------------
-        print(''.join(['=']*80))
+        print("".join(["="] * 80))
         model.eval()
 
         x_validn, target_validn = next(iter(dataloader_validn))
         x_validn, target_validn = x_validn.to(device), target_validn.to(device)
-        y_validn = model(x_validn).reshape(-1,)
+        y_validn = model(x_validn).reshape(-1)
 
         validn_loss = F.binary_cross_entropy_with_logits(
-            input=y_validn, target=target_validn.float())
-        validn_accuracy = ((torch.sigmoid(y_validn) > 0.5)
-                           == target_validn.byte()).float().mean() * 100
+            input=y_validn, target=target_validn.float()
+        )
+        validn_accuracy = (
+            (torch.sigmoid(y_validn) > 0.5) == target_validn.byte()
+        ).float().mean() * 100
 
-        print("Epoch {}: Validation ({} items) loss = {:5.3f}, accuracy = {:4.1f}".format(
-            epoch, x_validn.shape[0], validn_loss, validn_accuracy))
+        print(
+            "Epoch {}: Validation ({} items) loss = {:5.3f}, accuracy = {:4.1f}".format(
+                epoch, x_validn.shape[0], validn_loss, validn_accuracy
+            )
+        )
 
-        if(validn_accuracy > best_validn_accuracy):
+        if validn_accuracy > best_validn_accuracy:
             best_validn_accuracy = validn_accuracy
-            torch.save(model.state_dict(), os.path.join(
-                model_path, "ep{}_accr{:4.1f}.pt".format(epoch, validn_accuracy)))
+            torch.save(
+                model.state_dict(),
+                os.path.join(
+                    model_path, "ep{}_accr{:4.1f}.pt".format(epoch, validn_accuracy)
+                ),
+            )
 
-        print(''.join(['=']*80))
+        print("".join(["="] * 80))
         # ---------------------------------------------------------------------
 
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--train_folder", type=str, default="data/trainset/",
-                        help="Path to the folder having training images")
-    parser.add_argument("--model_path", type=str, default="data/model/",
-                        help="Path to the folder where models to be saved")
+    parser.add_argument(
+        "--train_folder",
+        type=str,
+        default="data/trainset/",
+        help="Path to the folder having training images",
+    )
+    parser.add_argument(
+        "--model_path",
+        type=str,
+        default="data/model/",
+        help="Path to the folder where models to be saved",
+    )
 
     args = vars(parser.parse_args())
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
