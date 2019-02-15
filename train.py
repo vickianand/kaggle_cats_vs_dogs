@@ -20,6 +20,24 @@ def train(train_folder, device, model_path="data/model/"):
     os.makedirs(model_path, exist_ok=True)
 
     transforms = Compose([ToTensor()])
+    
+    #Augmentation and Normalization
+    '''
+    transforms = {
+    'dataset_train': transforms.Compose([
+        transforms.RandomRotation(5),
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomResizedCrop(224, scale=(0.96, 1.0), ratio=(0.95, 1.05)),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ]),
+    'dataset_validn': transforms.Compose([
+        transforms.Resize([224,224]),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+    ]),
+}
+    '''
     dataset = ImageFolder(root=train_folder, transform=transforms)
     # dataset = torch.utils.data.Subset(dataset, indices=range(200))
 
