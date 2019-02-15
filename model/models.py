@@ -5,9 +5,9 @@ import torch.nn.functional as F
 
 class TwoConvOnePool(nn.Module):
     """Repetetive network structure found in VGG net
-    Spatial-dimension remains is reduced by 2:
+    Spatial-dimension is reduced by 2:
         Conv layers don't change the spatial dimension (kernel=3, padding=1)
-        MaxPool layer halves the spatial dimensio
+        MaxPool layer halves the spatial dimension
     Depth dimensions should be passed as argument
     """
 
@@ -18,7 +18,7 @@ class TwoConvOnePool(nn.Module):
             nn.ReLU(inplace=True),
             nn.Conv2d(out_channels, out_channels, 3, padding=1),
             nn.ReLU(inplace=True),
-            nn.MaxPool2d(2)  # stride=2 (default value is same as kernel)
+            nn.MaxPool2d(2),  # stride=2 (default value is same as kernel)
         )
 
     def forward(self, x):
@@ -46,11 +46,11 @@ class VggTypeNet(nn.Module):
         self.conv_net = nn.Sequential(*net_list)
         # spatial dimension reduces by a factor of 2**len(channel_list)
 
-        self.fc_in_features = channel_list[-1] * \
-            (width // 2**len(channel_list))**2
+        self.fc_in_features = channel_list[-1] * (width // 2 ** len(channel_list)) ** 2
 
-        self.f_c_layer = nn.Linear(in_features=self.fc_in_features,
-                                   out_features=num_classes)
+        self.f_c_layer = nn.Linear(
+            in_features=self.fc_in_features, out_features=num_classes
+        )
 
     def forward(self, x):
         return self.f_c_layer(self.conv_net(x).reshape(-1, self.fc_in_features))

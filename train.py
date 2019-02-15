@@ -1,5 +1,6 @@
 import os
 from argparse import ArgumentParser
+import numpy as np
 import torch
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
@@ -127,6 +128,12 @@ def train(train_folder, device, model_path="data/model/"):
 
 
 if __name__ == "__main__":
+    # set seeds for reproducibility
+    seed = 1
+    torch.random.manual_seed(seed)
+    np.random.seed(seed)
+
+    # add command line arguments
     parser = ArgumentParser()
     parser.add_argument(
         "--train_folder",
