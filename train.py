@@ -71,8 +71,10 @@ def train(train_folder, device, model_path="data/model/"):
     dataloader_train = DataLoader(dataset_train, batch_size=128, shuffle=True)
     dataloader_validn = DataLoader(dataset_validn, batch_size=1024)
 
-    vgg_channel_list = [64, 128, 256]
-    model = VggTypeNet(channel_list=vgg_channel_list, num_classes=1).to(device)
+    vgg_channel_list = [64, 128, 64]
+    model = VggTypeNet(
+        channel_list=vgg_channel_list, num_classes=1, batch_norm=True
+    ).to(device)
     print(
         "Using vgg_channel_list = {}; Number of model parameters = {}".format(
             vgg_channel_list,
