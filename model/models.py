@@ -24,34 +24,6 @@ class TwoConvOnePool(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-class FiveConvFivePool(nn.Module):
-    """
-    Just another network structure(deeper)
-    """
-
-    def __init__(self, in_channels=3, out_channels=64):
-        super().__init__()
-        self.net = nn.Sequential(
-            nn.Conv2d(in_channels, out_channels=32, 5, padding=1),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(5),
-            nn.Conv2d(out_channels, out_channels=64, 5, padding=1),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(5),  
-            nn.Conv2d(out_channels, out_channels=128, 5, padding=1),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(5),
-            nn.Conv2d(out_channels, out_channels=64, 5, padding=1),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d(5),
-            nn.Conv2d(out_channels, out_channels=32, 5, padding=1),
-            nn.ReLU(inplace=True),
-            nn.AvgPool2d(5),
-        )
-
-    def forward(self, x):
-        return self.net(x)
-
 
 class VggTypeNet(nn.Module):
     """

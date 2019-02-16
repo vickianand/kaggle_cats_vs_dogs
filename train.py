@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 
 from torchvision.datasets import ImageFolder
-from torchvision.transforms import ToTensor, Compose
+from torchvision import transforms
 
 from model.models import TwoConvOnePool, VggTypeNet
 
@@ -19,26 +19,30 @@ def train(train_folder, device, model_path="data/model/"):
 
     os.makedirs(model_path, exist_ok=True)
 
-    transforms = Compose([ToTensor()])
-    
-    #Augmentation and Normalization
-    '''
-    transforms = {
-    'dataset_train': transforms.Compose([
-        transforms.RandomRotation(5),
-        transforms.RandomHorizontalFlip(),
-        transforms.RandomResizedCrop(224, scale=(0.96, 1.0), ratio=(0.95, 1.05)),
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-    ]),
-    'dataset_validn': transforms.Compose([
-        transforms.Resize([224,224]),
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-    ]),
-}
-    '''
-    dataset = ImageFolder(root=train_folder, transform=transforms)
+    # Augmentation and Normalization
+
+    transform_set = {
+        "dataset_train": transforms.Compose(
+            [
+                transforms.RandomRotation(30),
+                transforms.RandomHorizontalFlip(p=0.25),
+                transforms.ToTensor(),
+                # transforms.Normalize(
+                #     [0.4899, 0.4599, 0.4163], [0.2521, 0.2451, 0.2473]
+                # ),
+            ]
+        ),
+        "dataset_validn": transforms.Compose(
+            [
+                transforms.ToTensor(),
+                # transforms.Normalize(
+                #     [0.4899, 0.4599, 0.4163], [0.2521, 0.2451, 0.2473]
+                # ),
+            ]
+        ),
+    }
+
+    dataset = ImageFolder(root=train_folder, transform=transform_set["dataset_train"])
     # dataset = torch.utils.data.Subset(dataset, indices=range(200))
 
     # train - validation split
@@ -51,6 +55,7 @@ def train(train_folder, device, model_path="data/model/"):
     dataset_train, dataset_validn = torch.utils.data.random_split(
         dataset, [train_size, validn_size]
     )
+    dataset_validn.transforms = transform_set["dataset_validn"]
 
     print(
         "Train set size = {}; Validation set size = {}".format(
