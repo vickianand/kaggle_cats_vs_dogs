@@ -29,7 +29,7 @@ def predict(
 
     dataloader = DataLoader(dataset, batch_size=128)
 
-    vgg_channel_list = [64, 128, 64]
+    vgg_channel_list = [64, 128, 256]
     model = VggTypeNet(channel_list=vgg_channel_list, num_classes=1).to(device)
     model.load_state_dict(torch.load(model_path, map_location=device))
     model.eval()
