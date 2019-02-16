@@ -8,6 +8,22 @@ Download data from the [Kaggle competition page](https://www.kaggle.com/c/ift613
 
 Run `python train.py --train_folder <path to folder having images>`
 
+```
+usage: train.py [-h] [--train_folder TRAIN_FOLDER] [--model_path MODEL_PATH]
+                [--batch_norm] [--decreasing_lr]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --train_folder TRAIN_FOLDER
+                        Path to the folder having training images
+  --model_path MODEL_PATH
+                        Path to the folder where models to be saved
+  --batch_norm          add this flag if you want to add batch_norm layer
+                        after every conv layer
+  --decreasing_lr       add this flag if you want to decrease learning-rate by
+                        multiplying with 0.99 after every epoch
+```
+
 ## Prediction
 
 Run

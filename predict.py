@@ -43,7 +43,9 @@ def predict(
         print("predicting on batch {}".format(i + 1))
         x = x.to(device)
 
-        y = model(x).reshape(-1)
+        y = None
+        with torch.no_grad():
+            y = model(x).reshape(-1)
         y = torch.sigmoid(y) > 0.5
 
         answer += [

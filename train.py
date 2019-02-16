@@ -15,7 +15,13 @@ import warnings
 # warnings.filterwarnings("ignore")
 
 
-def train(train_folder, device, model_path="data/model/"):
+def train(
+    train_folder,
+    device,
+    model_path="data/model/",
+    batch_norm=False,
+    decreasing_lr=False,
+):
 
     os.makedirs(model_path, exist_ok=True)
 
@@ -46,7 +52,7 @@ def train(train_folder, device, model_path="data/model/"):
     # dataset = torch.utils.data.Subset(dataset, indices=range(200))
 
     # train - validation split
-    train_split = 0.95
+    train_split = 0.05
     train_size = int(train_split * len(dataset))
     validn_size = len(dataset) - train_size
     # validn_size = 1024
@@ -73,7 +79,7 @@ def train(train_folder, device, model_path="data/model/"):
 
     vgg_channel_list = [64, 128, 64]
     model = VggTypeNet(
-        channel_list=vgg_channel_list, num_classes=1, batch_norm=True
+        channel_list=vgg_channel_list, num_classes=1, batch_norm=batch_norm
     ).to(device)
     print(
         "Using vgg_channel_list = {}; Number of model parameters = {}".format(
@@ -118,21 +124,34 @@ def train(train_folder, device, model_path="data/model/"):
             train_loss.backward()
             optimizer.step()
 
+        # update optimizer learning rate : multiply by 0.99 after every epoch
+        if decreasing_lr:
+            for param_group in optimizer.param_groups:
+                param_group["lr"] *= 0.99
+
         # ---------------------------------------------------------------------
         print("".join(["="] * 80))
         model.eval()
 
-        x_validn, target_validn = next(iter(dataloader_validn))
-        x_validn, target_validn = x_validn.to(device), target_validn.to(device)
-        y_validn = model(x_validn).reshape(-1)
+        validn_losses = []
+        validn_accuracies = []
+        for x_validn, target_validn in dataloader_validn:
+            x_validn, target_validn = x_validn.to(device), target_validn.to(device)
+            y_validn = None
+            with torch.no_grad():
+                y_validn = model(x_validn).reshape(-1)
 
-        validn_loss = F.binary_cross_entropy_with_logits(
-            input=y_validn, target=target_validn.float()
-        )
-        validn_accuracy = (
-            (torch.sigmoid(y_validn) > 0.5) == target_validn.byte()
-        ).float().mean() * 100
+            validn_losses.append(
+                F.binary_cross_entropy_with_logits(
+                    input=y_validn, target=target_validn.float()
+                )
+            )
+            validn_accuracies.append(
+                ((torch.sigmoid(y_validn) > 0.5) == target_validn.byte()).float()
+            )
 
+        validn_loss = sum(validn_losses) / len(validn_losses)
+        validn_accuracy = torch.cat(validn_accuracies, dim=0).mean() * 100
         print(
             "Epoch {}: Validation ({} items) loss = {:5.3f}, accuracy = {:4.1f}".format(
                 epoch, x_validn.shape[0], validn_loss, validn_accuracy
@@ -172,7 +191,28 @@ if __name__ == "__main__":
         default="data/model/",
         help="Path to the folder where models to be saved",
     )
+    parser.add_argument(
+        "--batch_norm",
+        action="store_const",
+        const=True,
+        default=False,
+        help="add this flag if you want to add batch_norm layer after every conv layer",
+    )
+    parser.add_argument(
+        "--decreasing_lr",
+        action="store_const",
+        const=True,
+        default=False,
+        help="add this flag if you want to decrease learning-rate by multiplying with 0.99 after every epoch",
+    )
 
-    args = vars(parser.parse_args())
+    args = parser.parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    train(args["train_folder"], device=device, model_path=args["model_path"])
+    train(
+        args.train_folder,
+        device=device,
+        model_path=args.model_path,
+        batch_norm=args.batch_norm,
+        decreasing_lr=args.decreasing_lr,
+    )
+
