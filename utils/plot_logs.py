@@ -43,7 +43,9 @@ def parse_log_file(fname):
 
 
 def accumulate_batches_to_epochs(losses, batch_per_epoch):
-    assert (len(losses) % batch_per_epoch) == 0
+    assert (
+        len(losses) % batch_per_epoch
+    ) == 0, "len(losses): {}, batch_per_epoch: {}".format(len(losses), batch_per_epoch)
     epoch_losses = []
     for i in range(0, len(losses), batch_per_epoch):
         epoch_losses.append(sum(losses[i : i + batch_per_epoch]) / batch_per_epoch)
