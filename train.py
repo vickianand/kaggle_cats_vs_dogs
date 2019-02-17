@@ -52,7 +52,7 @@ def train(
     # dataset = torch.utils.data.Subset(dataset, indices=range(200))
 
     # train - validation split
-    train_split = 0.05
+    train_split = 0.95
     train_size = int(train_split * len(dataset))
     validn_size = len(dataset) - train_size
     # validn_size = 1024
@@ -127,7 +127,7 @@ def train(
         # update optimizer learning rate : multiply by 0.99 after every epoch
         if decreasing_lr:
             for param_group in optimizer.param_groups:
-                param_group["lr"] *= 0.99
+                param_group["lr"] *= 0.95
 
         # ---------------------------------------------------------------------
         print("".join(["="] * 80))
