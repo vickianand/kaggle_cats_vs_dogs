@@ -13,7 +13,7 @@ from model.models import VggTypeNet
 def predict(
     image_folder="data/testset/",
     device=torch.device("cpu"),
-    model_path="data/model/ep1_accr50.3.pt",
+    model_path="model/m5_ep267_ac94.4.pt",
 ):
 
     assert os.path.exists(model_path)

@@ -51,3 +51,12 @@ optional arguments:
 ```
 
 Example: `python plot_logs.py --log ../logs/m2_vggtype_64_128_256_train.log --save --max_epoch 35` will generate the training & validation loss and accuracy curves. It will save them in same location as the log-file provided to it.
+
+## Visualization scripts
+There are two scripts.
+
+* `get_validn_mispredictions.py` for finding mis-predicted and confusing images from validation set .
+    - Run: `python get_validn_mispredictions.py --batch_norm`
+
+* `visualize_convnet.py` for generating outputs from each layer of the M3 model.
+    - Run: `python visualize_convnet.py`

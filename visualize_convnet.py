@@ -36,7 +36,7 @@ def process_image(img):
 cat_tensor = process_image(cat_img)
 dog_tensor = process_image(dog_img)
 
-model_path = "data/model/m3_ep415_ac93.pt"
+model_path = "model/m3_ep415_ac93.pt"
 model = VggTypeNet(channel_list=[64, 128, 64], num_classes=1).to(device)
 model.load_state_dict(torch.load(model_path, map_location=device))
 
